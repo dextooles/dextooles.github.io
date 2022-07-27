@@ -1,0 +1,160 @@
+{
+  "settings": {
+    "name": "Dextooles",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise5",
+      "title": "Mobirise 5",
+      "styling": {
+        "primaryColor": "#6592e6",
+        "secondaryColor": "#ff6666",
+        "successColor": "#40b0bf",
+        "infoColor": "#47b5ed",
+        "warningColor": "#FFE161",
+        "dangerColor": "#ff9966",
+        "mainFont": "Jost",
+        "display1Font": "Jost",
+        "display1Size": 4.6,
+        "display2Font": "Jost",
+        "display2Size": 3,
+        "display5Font": "Jost",
+        "display5Size": 2,
+        "display7Font": "Jost",
+        "display7Size": 1.2,
+        "display4Font": "Jost",
+        "display4Size": 1.1,
+        "isRoundedButtons": false,
+        "isGhostButtonBorder": false,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": [
+        "#171f28"
+      ]
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.6.11",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/dextools.png",
+    "mbrsiteDomain": "iws318vypx",
+    "imageResize": false,
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.6.11"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "DEXTools | Home | DEXTools.io",
+        "meta_descr": "DEXTools, the gateway to DEFI, real-time charts, history and all token info from blockchain. DEXTools, the gateway to DEFI, real-time charts, history all token.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            "@media (max-width: 991px)": {
+              ".image-wrapper": {
+                "margin-bottom": "1rem"
+              }
+            },
+            ".row": {
+              "flex-direction": "row-reverse"
+            },
+            "img": {
+              "width": "100%"
+            }
+          },
+          "_name": "image3",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image3\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" name=\"textWidth\" title=\"Image\" min=\"4\" max=\"12\" step=\"1\" value=\"12\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#171f28\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <div class=\"image-wrapper\">\n                    <img src=\"@PROJECT_PATH@/assets/images/dextools-io.png\" alt=\"dextools\">\n                    <p class=\"mbr-description mbr-fonts-style mt-2 align-center\" mbr-theme-style=\"display-4\" mbr-if=\"showText\" data-app-selector=\".mbr-description\">\n                        Image Description</p>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tcLWN1drV9",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image3-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#ffffff"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#ffffff"
+            }
+          },
+          "_name": "header2",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header2\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n\n        <input type=\"range\" inline name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"12\" step=\"1\">\n        <select title=\"Align\" name=\"contentAlign\">\n            <option value selected>Left</option>\n            <option value=\"justify-content-center\">Center</option>\n            <option value=\"justify-content-end\">Right</option>\n        </select>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background7.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#171f28\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background13.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row {{contentAlign}}\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <h1 class=\"mbr-section-title mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"><b>DEXTools (DEXT) Price, Chart, Value &amp; Market Cap.</b></h1>\n                <h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-2\" mbr-if=\"showSubitle\">Header Subtitle</h2>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b><a href=\"https://dextooles.github.io/\" class=\"text-primary\"><b>DEXTools</b></a> </b>gives live examination to crypto resources that exchange on decentralized trades. It is a high priority instrument for all crypto merchants who like exchanging on DEXs like Uniswap and SushiSwap. The convention offers investigation to assist with thinking up interesting exchanging systems, look for large spreads, expect market patterns, and track and duplicate the most productive wallets (Whales) and different administrations.\n<br>\n<br>Decentralized trades (DEXs) offer the absolute best administrations in the crypto area. Notwithstanding, they are to a great extent impacted by liquidity matters at certain times since they exchange even the most un-known tokens. In this manner crypto engineers have concocted various answers for make the liquidities and the expenses of various coins reasonable.\n<br>\n<br>They have concocted arrangements like DEX aggregators, liquidity pools, and presently DEXTools. DEX aggregators track the best costs for tokens across various trades in partitioned structures and afterward total them into one exchange. Liquidity pools are accessible in practically all trades, including CEXs, and they permit clients to lock their resources and give liquidity to procure rewards.\n<br>\n<br>The motivation behind these arrangements is to ensure that a trade has sufficient liquidity of a given token so merchants can trade them at costs like the market range. It evades slippage where the cost at which a given symbolic trade is higher than whatever it is selling on the lookout. To keep away from slippage on DEXs, clients ought to go to DEXTools to get a total investigation of the business sectors. The following is more data on how DEXTools work.\n<br>\n<br>Organization Overview\n<br><a href=\"https://dextooles.github.io/\" class=\"text-primary\"><b>DEXTools</b></a> sent off its application in June 2020 as a public Beta form and had 200 million DEXT tokens accessible. It was established by Frederic and Javier, both experienced merchants and engineers utilizing their own assets. The pair met at a merchants bunch in 2017 and started an expert fellowship, which bore the underpinning of DEXTools in 2020.\n<br>\n<br>After a month, the group got Pablo as their most memorable CTO to establish the groundworks for the expert administrations arrangement of the stage. From that point forward, the device has been acquiring the consideration and reception of the DeFi people group, to a great extent making DEXT a focal center of DeFi exchanging.\n<br>\n<br>The stage keeps up with its uniqueness by focussing on the nature of the information gave to its clients by being continuous and dependable. The stage additionally endeavors to remain local area based by putting together piece of its improvement with respect to local area input and drives like DEXT Force and DEXT Force Ventures.\n<br>\n<br>What is <a href=\"https://dextooles.github.io/\" class=\"text-primary\"><b>DEXTools</b></a>/DEXT?\n<br>DEXTools is a stage and an environment that permits dealers to follow data pretty much completely decentralized markets. It acclimatizes blockchain information into a solitary far reaching UI permitting the client to have a reasonable vision of their exchanging, speculations, and the present status of the market.\n<br>\n<br>It has a local token called DEXT that is utilized to:\n<br>\n<br>Open various highlights on the stage as indicated by levels through paying for memberships.\n<br>Access premium exchanging gatherings and the local area drives like the DEXT Force Ventures.\n<br>A portion of the purposes of DEXTools include:\n<br>\n<br>Has pool investigate that permits clients to pursue liquidity directions and the development of new liquidity pools on decentralized trades.\n<br>Has a couple pilgrim that permits clients to really take a look at exchanging outlines, the exchange of tokens, and the measurements and trust evaluations of a token.\n<br>Has wallet data which enables clients to follow and follow their number one broker's wallets (most loved whales).\n<br>Has Bigswap Explorer that takes into consideration following whales and other large exchanges.\n<br>Has a multi-trade highlight that opens up different DEX gateways to speed up.\n<br>DEXTools Key Features\n<br>These are the top advantages of the DEXTools stage\n<br>\n<br>Pool Explorer\n<br>The pool pilgrim DEXTool permits clients to find moving pools easily. It likewise permits finding new pearls and the complete worth of the jewels in a sets pool with minimal exertion as all examination is prepared. Furthermore, a client can screen the liquidity patterns in a lot easier manner to know how the tokens being referred to would be impacted (Bearishly or Bullishly).\n<br>\n<br>This element likewise offers every one of the significant connections like the tokens' pilgrims or DEX pages in a solitary point of interaction to make it more straightforward to check the information. It likewise offers a speedy connect to really look at the pools' liquidity through Unicrypt.\n<br>\n<br>Match Explorer\n<br>The pair pioneer highlight considers following the set of experiences and cost activity diagrams of resources continuously and following a client's number one tokens. DEXTools likewise creates a score for token matches, which can help in sidestepping the conspicuous trick traps. The stage permits standard and premium clients to set up decentralized limit orders or algorithmic exchanging bots.\n<br>\n<br>P&amp;L Tracking Feature\n<br>It's a requesting cycle to monitor clients' situations across all suitable altcoins, particularly in the event that they are exchanging the coins around cultivating pools. DEXTools has an inbuilt P&amp;L Tracking highlight that can accomplish all that work for its userbase. It fabricates an exchanging diary that permits the clients to report exchanging choices and further develop their exchanging system after some time.\n<br>\n<br>Large Swaps\n<br>The stage has the Big Swaps device that takes into consideration the following of huge dealers, usually known as crypto whales. These merchants are known to handily control the business sectors, particularly when a token has restricted liquidity. For example, the reports by a stage when a whale deal happens can assist clients with getting a plunge.\n<br>\n<br>Notices\n<br>The stage has a cost cautions highlight for the clients' number one tokens through work area, email, and message. This apparatus permits clients to work on their crypto exchanging systems. It is additionally extremely simple to set up and gainful to brokers who take part in cutting edge exchanging choices like subsidiaries.\n<br>\n<br>MultiSwap\n<br>The stage permits clients to communicate with various matches on a solitary screen. This element builds the availability of the stage's devices, consequently working on the clients' communication with the market.\n<br>\n<br>DEXT\n<br>DEXT, the local badge of DEXTools, is exchanging at $0.280455 with a 24-hour exchanging volume of $126,564. The coin positions at number 681 on CoinMarketCap as indicated by its ongoing business sector capitalization of $27,499,632. It likewise has a complete circling supply of 98,053,798 coins.\n<br>\n<br>DEXT Tokenomics\n<br>DEXT sent off with an all out supply of 200 million tokens. The following is a recap of how the inventory has and is being made due\n<br>\n<br>200 million starting stock\n<br>100 million coins put away as group reserves\n<br>half of the group reserves consumed, leaving 150M coins available for use\n<br>10% of membership expenses (paid in DEXT) consumed every month, making the coin deflationary.\n<br>The DEXT Share\n<br>DEXT share is a critical piece of the coin's tokenomics as the leftover 90% of the membership charges go to it. These assets are coordinated to DEXT holders of no less than 100,000 tokens at a worth proportionate to their property. This element is perfect for these holders as there is compelling reason need to secure or stake the assets since they will acquire detached awards through sitting inactively in their wallets.\n<br>\n<br>Every month, the convention takes a preview and gives the exceptional holders DEXT tokens through airdrops. This interaction is very great as you acquire latently without paying the gas charges. Also, group wallets are excluded from sharing the membership charges, implying that everything goes to the holders.\n<br>\n<br>DEXT Price Prediction\n<br>Since it is the utility badge of a notable biological system (HAD 5 MILLION VISITORS IN MARCH 2022), DEXT gets the opportunity to keep filling in esteem before very long lined up with the reception of the DEXTools convention. The token has a functioning consuming instrument that has cleared off practically half of its underlying supply.Additionally, the consuming component makes the coin deflationary.\n<br>\n<br>Its utility in the DEXTools convention gives it a genuine organic market dynamic that makes genuine use of the coin. In this manner, the coin could observer huge long haul development as cryptos go standard. Notwithstanding, it is ideal to continue to investigate the coin and the improvements encompassing DeFi, DEXs, and DEXTools stage since they may significantly influence the coin's future.\n<br>\n<br>How Does DEXTools Work?\n<br>DEXTools permits clients to perform nuclear trades of tokens straightforwardly, expecting them to tap on the 'Multiswap' button and select a couple and the DEX they need to utilize. When the client has done that, they ought to associate their wallets to the chose DEX, and the arrangement will be prepared for use.\n<br>\n<br>The stage has highlights that are not difficult to follow on its UI. Everything necessary of a client is to tap the buttons on the administrations they would have to get to, including TradingView graphs. They can likewise get to a few outlining instruments to follow the market and save the investigation for sharing via virtual entertainment.\n<br>\n<br>To begin utilizing this stage, clients just have to interface their wallets to it. The associated wallets ought to just be the upheld types:\n<br>\n<br>Metamask\n<br>WalletConnect\n<br>WalletLink\n<br>Torus\n<br>Fortmatic\n<br>Ethereum\n<br>MEW\n<br>After an effective association of the wallet to the stage, the client ought to then verify the responsibility for wallet to begin utilizing DEXTools.\n<br>\n<br>Moreover, it is ideal to take note of that despite the fact that a large portion of the elements of DEXTools are free, it needs a membership for premium administrations. A client can get to the standard arrangement by holding 1,000 DEXT in their wallets or paying a month to month membership of 277 DEXT. The Standard arrangement offers more exchange and wallet data; cost cautions through Telegram and email, admittance to the DEXT Force Discord station, and twelve new hot matches, all of which the free variant doesn't offer.\n<br>\n<br>The exceptional form is most noteworthy level and is only open to the people who hold over 100K DEXT in their wallets. The superior holders enjoy many benefits, including the airdrops from the DEXTShare convention. They likewise get 15 hot sets with quicker notices, restricted admittance to DEXTForce Ventures, and the stage's all's impending elements.</p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\">\n                    <a class=\"btn btn-success\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Free Download!</a>\n                    <a class=\"btn btn-success-outline\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Live Demos &gt;</a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tcLWNQaceG",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "header2-1"
+        }
+      ]
+    }
+  }
+}
